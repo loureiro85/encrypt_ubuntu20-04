@@ -23,4 +23,4 @@ nano vi /etc/crypttab
 #     tries=0 - allows to re-enter password unlimited number of times
 #     discard - allows SSD TRIM command, WARNING: potential security risk (more: "man crypttab")
 #     loud    - display all warnings
-sda6_crypt UUID=abcdefgh-1234-5678-9012-abcdefghijklm none luks,discard
+nvme0n1p8_crypt UUID=abcdefgh-1234-5678-9012-abcdefghijklm none luks,discard
