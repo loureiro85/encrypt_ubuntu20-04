@@ -15,7 +15,7 @@ mount -a
 # Find the UUID of the partition you set up with LUKS
 sudo blkid /dev/nvme0n1p8
 
-nano vi /etc/crypttab
+sudo nano /etc/crypttab
 
 # <target name> <source device> <key file> <options>
 # options used:
