@@ -24,3 +24,7 @@ sudo nano /etc/crypttab
 #     discard - allows SSD TRIM command, WARNING: potential security risk (more: "man crypttab")
 #     loud    - display all warnings
 nvme0n1p8_crypt UUID=abcdefgh-1234-5678-9012-abcdefghijklm none luks,discard
+
+# After editing crypttab
+update-initramfs -k all -c
+
